@@ -11,13 +11,16 @@ const exampleObj = {
 };
 
 function App() {
-  const codeData = JSON.stringify(exampleObj);
+  // const codeData = JSON.stringify(exampleObj);
+  const codeData = "test";
 
   return (
     <div className="App">
       <header className="App-header">
         <QRScanner />
-        <QRCode value={codeData} />
+        <div style={{ background: "white", padding: "16px" }}>
+          <QRCode value={codeData} />
+        </div>
       </header>
     </div>
   );

@@ -12,6 +12,7 @@ class QRScanner extends Component {
     this.handleScan = this.handleScan.bind(this);
   }
   handleScan(data) {
+    console.log("handleScan");
     this.setState({
       result: data,
     });
